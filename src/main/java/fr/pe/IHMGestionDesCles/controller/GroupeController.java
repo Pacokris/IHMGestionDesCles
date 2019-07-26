@@ -31,7 +31,7 @@ public class GroupeController {
 //        myList.add(group1);
 //        myList.add(group2);
 
-        ListGroupEntity myList = groupeRestService.getGroupAll();
+        List<GroupEntity> myList = groupeRestService.getGroupAll();
         //nom de la template mustache {{#groupes}}....{{/groupes}}
         model.put("groupes", myList);
 

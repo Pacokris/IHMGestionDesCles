@@ -1,0 +1,55 @@
+{{>layout/head}}
+
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo"><strong>DOMAINE DE GESTION DES CLES</strong>
+                    <div class="text-center">Pôle Emploi DSI</div>
+                </a>
+            </header>
+
+            <!-- Content -->
+            <section>
+                <!-- Form -->
+                <h3>Ajouter un groupe</h3>
+
+                <form method="post" action="#">
+                    <div class="row gtr-uniform">
+                        <div class="col-6 col-12-xsmall">
+                            <label>Intitulé</label>
+                            <input type="text" name="intitule" id="intitule" value=""/>
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <label>Description</label>
+                            <input type="text" name="description" id="description" value=""/>
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" value="Envoyer" class="primary"/>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    {{>layout/sidebar}}
+
+</div>
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/browser.min.js"></script>
+<script src="js/breakpoints.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+{{>layout/footer}}

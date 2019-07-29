@@ -25,11 +25,11 @@ public class GroupeController {
      */
     @GetMapping("/groupes")
     public ModelAndView displayGroupes(Map<String, Object> model) {
-//        GroupEntity group1 = new GroupEntity("Partenaires SPE", "Structures DGEFP, CAP EMPLOI et Mission Locale", "2019-07-16 17:45:00", "2019-07-16 17:45:00");
-//        GroupEntity group2 = new GroupEntity("Partenaires SPE", "Structures DGEFP, CAP EMPLOI et Mission Locale", "2019-07-16 17:45:00", "2019-07-16 17:45:00");
-//        List<GroupEntity> myList = new ArrayList<>();
-//        myList.add(group1);
-//        myList.add(group2);
+        /*GroupEntity group1 = new GroupEntity("Partenaires SPE", "Structures DGEFP, CAP EMPLOI et Mission Locale", "2019-07-16 17:45:00", "2019-07-16 17:45:00");
+        GroupEntity group2 = new GroupEntity("Partenaires SPE", "Structures DGEFP, CAP EMPLOI et Mission Locale", "2019-07-16 17:45:00", "2019-07-16 17:45:00");
+        List<GroupEntity> myList = new ArrayList<>();
+        myList.add(group1);
+        myList.add(group2);*/
 
         List<GroupEntity> myList = groupeRestService.getGroupAll();
         //nom de la template mustache {{#groupes}}....{{/groupes}}

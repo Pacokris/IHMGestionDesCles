@@ -1,0 +1,67 @@
+{{>layout/head}}
+
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo"><strong>DOMAINE DE GESTION DES CLES</strong>
+                    <div class="text-center">Pôle Emploi DSI</div>
+                </a>
+            </header>
+
+            <!-- Content -->
+            <section>
+                <!-- Form -->
+                <h3>Ajouter une cle</h3>
+
+                <form method="post" action="#">
+                    <div class="row gtr-uniform">
+                        <div class="col-6 col-12-xsmall">
+                            <label>Clé chiffrement</label>
+                            <input type="text" name="cleChiffrement" id="cleChiffrement" value=""/>
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <label>Valeur clé chiffrement</label>
+                            <input type="text" name="valeurCleChiffrement" id="valeurCleChiffrement" value=""/>
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <label>Date début validité</label>
+                            <input type="text" name="dateDebutValidite" id="dateDebutValidite" value=""/>
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <label>Date fin validité</label>
+                            <input type="text" name="dateFinValidite" id="dateFinValidite" value=""/>
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <label>Date révocation planifiée</label>
+                            <input type="text" name="dateRevocationPlanifiee" id="dateRevocationPlanifiee" value=""/>
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" value="Envoyer" class="primary" />
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    {{>layout/sidebar}}
+
+</div>
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/browser.min.js"></script>
+<script src="js/breakpoints.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+{{>layout/footer}}

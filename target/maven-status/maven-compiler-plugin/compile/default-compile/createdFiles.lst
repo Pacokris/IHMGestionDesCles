@@ -1,0 +1,9 @@
+fr/pe/IHMGestionDesCles/controller/GroupeController.class
+fr/pe/IHMGestionDesCles/controller/IndexController.class
+fr/pe/IHMGestionDesCles/IhmGestionDesClesApplication.class
+fr/pe/IHMGestionDesCles/service/GroupeRestService.class
+fr/pe/IHMGestionDesCles/controller/WebConfig.class
+fr/pe/IHMGestionDesCles/model/ListGroupEntity.class
+fr/pe/IHMGestionDesCles/controller/LayoutAutoConfiguration.class
+fr/pe/IHMGestionDesCles/service/GroupeRestService$1.class
+fr/pe/IHMGestionDesCles/model/GroupEntity.class

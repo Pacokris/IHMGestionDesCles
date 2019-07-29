@@ -3197,7 +3197,7 @@ input, select, textarea {
 			}
 
 			#sidebar .toggle:before {
-				content: '\f0c9';
+				content: '\f0c10';
 				font-size: 2rem;
 				height: inherit;
 				left: 0;

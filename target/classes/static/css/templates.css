@@ -1,0 +1,16 @@
+#ligneretour {
+    background-color: #e6f5ff
+}
+
+#errorSaisieLigne {
+    margin-left: 265px
+}
+
+#errorSaisieFormulaire {
+    margin-left: 100px
+}
+
+.btn btn-success {
+    display: flex;
+    align-items: stretch;
+}

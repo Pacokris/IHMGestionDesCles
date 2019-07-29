@@ -1,0 +1,76 @@
+{{>layout/head}}
+
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo"><strong>DOMAINE DE GESTION DES CLES</strong>
+                    <div class="text-center">Pôle Emploi DSI</div>
+                </a>
+            </header>
+
+            <!-- Content -->
+            <section>
+                <!-- Table -->
+                <h3>Liste des cles</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Code clé chiffrement</th>
+                            <th>Valeur clé chiffrement</th>
+                            <th>Date création </br><img src="images/trier.svg" alt="trier"></th>
+                            <th>Date modification </br><img src="images/trier.svg" alt="trier"></th>
+                            <th>Date début validité </br><img src="images/trier.svg" alt="trier"></th>
+                            <th>Date fin validité </br><img src="images/trier.svg" alt="trier"></th>
+                            <th>Date révocation plannifiée </br><img src="images/trier.svg" alt="trier"></th>
+                            <th>Modifier</th>
+                            <th>Supprimer</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#cles}}
+                        <tr>
+                            <td>{{code_cle_chiffrement}}</td>
+                            <td>{{valeur_cle_chiffrement}}</td>
+                            <td>{{horodatage_creation}}</td>
+                            <td>{{horodatage_modification}}</td>
+                            <td>{{horodatage_debut_validite}}</td>
+                            <td>{{horodatage_fin_validite}}</td>
+                            <td>{{horodatage_revocation_planifiee}}</td>
+                            <td><a href="/cleModif"><img src="images/update.png" alt="updateImg"></a></td>
+                            <td><a href="#"><img src="images/delete.png" alt="deleteImg"></a></td>
+                        </tr>
+                        {{/cles}}
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+                <!-- Buttons -->
+                <a href="/cleAjout" class="button large">Ajouter une clé</a>
+            </section>
+        </div>
+    </div>
+    {{>layout/sidebar}}
+</div>
+
+</div>
+
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/browser.min.js"></script>
+<script src="js/breakpoints.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+{{>layout/footer}}
